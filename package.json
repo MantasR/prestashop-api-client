@@ -17,8 +17,7 @@
     "test": ".npm/scripts/test",
     "coverage": "./istanbul cover npm test",
     "start": "./nodemon --ignore ./dist -x 'npm test || true'",
-    "prepublish": "npm config set registry 'https://registry.npmjs.org' && npm test && .npm/scripts/build",
-    "postpublish": "git checkout develop"
+    "prepublish": "npm config set registry 'https://registry.npmjs.org' && npm test && .npm/scripts/build"
   },
   "author": "IT Consultis <tech@it-consultis.com",
   "license": "MIT",
@@ -26,9 +25,7 @@
     "i": "^0.3.5",
     "lodash": "^3.10.1",
     "node-fetch": "^1.6.0",
-    "xml2js": "^0.4.17"
-  },
-  "devDependencies": {
+    "xml2js": "^0.4.17",
     "babel-cli": "^6.14.0",
     "babel-core": "^6.14.0",
     "babel-eslint": "^6.1.2",
